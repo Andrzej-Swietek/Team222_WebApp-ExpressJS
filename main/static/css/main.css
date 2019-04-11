@@ -1,0 +1,464 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+body {
+  background-color: #fff;
+  color: #efefef;
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+
+.podkreslenie {
+  text-align: center;
+  font-size: 15px;
+  height: 20px;
+  width: 100%;
+  background-color: rgba(255, 153, 0, 0.95);
+}
+.bg {
+  /* The image used */
+  background-image: url("1.jpg");
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  top: 50%;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.zdjecie-ruchome {
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+
+  box-sizing: border-box;
+  min-height: 60vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 0;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+  color: #c0d06f;
+  margin: 20px;
+}
+
+.jumpers {
+  text-align: center;
+}
+.tigertrons {
+  text-align: center;
+}
+.loguj {
+  background-color: #eba014;
+  height: 200px;
+  margin-top: 25px;
+  padding-top: 90px;
+}
+.jumpers img {
+  width: 100%;
+  height: auto;
+}
+
+.tigertrons img {
+  width: 100%;
+  height: auto;
+}
+
+.jumpers p {
+  margin-bottom: 30px;
+}
+.tigertrons p {
+  margin-bottom: 30px;
+}
+
+.tigertrons figcaption {
+  margin-top: 8px;
+}
+
+/*
+.navbar-nav li:hover>.dropdown-menu
+{
+	display: block;
+}
+*/
+
+.navbar {
+  min-height: 57px;
+}
+
+.bg-jumpers {
+  background-color: rgba(255, 204, 0, 0.8) !important;
+}
+
+.team-mates-pictures .row {
+  margin-bottom: 40px;
+}
+
+#cards-wraper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.loginBtn {
+  margin: 0;
+  padding: 0;
+  background-color: #0c002b;
+}
+
+.Googlemap {
+  align-content: center;
+  height: 450px;
+  -webkit-box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 0.9);
+  -moz-box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 0.9);
+  box-shadow: 3px 3px 30px 5px rgba(204, 204, 204, 0.9);
+}
+
+.contact-form-button {
+  left: 50%;
+  position: absolute;
+  width: 300px;
+  background-color: #0066ff;
+  font-size: 20px;
+  color: white;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  letter-spacing: 2px;
+  outline: none;
+  text-align: center;
+  text-decoration-color: none;
+}
+.contact-form-button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.loginBtn a {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #333;
+  padding: 30px 60px;
+  font-size: 30px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.loginBtn a:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  /*background: rgba(255, 255, 255, 0.05);*/
+}
+.loginBtn a span:nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, #faea05, #ddc916);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.loginBtn a span:nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #faea05, #ddc916);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate2 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+.loginBtn a span:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to left, #faea05, #ddc916);
+  animation: animate3 2s linear infinite;
+}
+@keyframes animate3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.loginBtn a span:nth-child(4) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to top, #faea05, #ddc916);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+@keyframes animate4 {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+/*----------------- FOOTER------------------------*/
+
+.foot {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(255, 153, 0, 0.8);
+}
+
+.foot ul {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+}
+
+.foot ul li {
+  margin-top: 25%;
+  list-style: none;
+}
+
+.foot ul li a {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  /*background: #ccc;*/
+  text-decoration: none;
+  color: #262626;
+  margin: 0 10px;
+  transition: 0.5s;
+}
+.foot ul li a span {
+  position: absolute;
+  transition: transform 0.5s;
+}
+
+/* Horizontal*/
+.foot ul li a span:nth-child(1),
+.foot ul li a span:nth-child(3) {
+  width: 100%;
+  height: 1px;
+  background: #262626;
+}
+
+.foot ul li a span:nth-child(1) {
+  top: 0;
+  left: 0;
+  transform-origin: right;
+}
+.foot ul li a:hover span:nth-child(1) {
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.foot ul li a span:nth-child(3) {
+  bottom: 0;
+  left: 0;
+  transform-origin: left;
+}
+.foot ul li a:hover span:nth-child(3) {
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+/*---vertical----*/
+
+.foot ul li a span:nth-child(2),
+.foot ul li a span:nth-child(4) {
+  width: 1px;
+  height: 100%;
+  background: #262626;
+}
+
+.foot ul li a span:nth-child(2) {
+  top: 0;
+  left: 0;
+  transform: scale(0);
+  transform-origin: bottom;
+}
+.foot ul li a:hover span:nth-child(2) {
+  transform: scale(1);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.foot ul li a span:nth-child(4) {
+  top: 0;
+  right: 0;
+  transform: scale(0);
+  transform-origin: top;
+}
+.foot ul li a:hover span:nth-child(4) {
+  transform: scale(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+/*----------------- END FOOTER---------------------*/
+
+/*------------------- crard -------------------*/
+
+.card {
+  font-family: "Josefin Sans", sans-serif;
+  width: 300px;
+  height: 400px;
+  tranform-style: preserve-3d;
+  perspective: 600px;
+  transition: 0.5s;
+  margin: 10px 10px;
+}
+
+.card .front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(0deg);
+  transition: 0.5s;
+}
+.card:hover .front {
+  transform: rotateX(-180deg);
+}
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  backface-visibility: hidden;
+  transform: rotateX(180deg);
+  transition: 0.5s;
+}
+
+.card .back:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.card:hover .back {
+  transform: rotateX(0deg);
+}
+
+.card:hover .back .details {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.card:hover .back .details h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.card:hover .back .details h2 span {
+  color: #a7a7a7;
+  font-size: 16px;
+}
+
+.card .back .details .social-icons {
+  padding: 10px 0;
+}
+.card .back .details .social-icons a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  background: #262626;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.card .back .details .social-icons a .fa {
+  line-height: 36px;
+}
+
+.card .back .details .social-icons a:hover {
+  background: #06f;
+}
+/*--------------------end card-----------------*/
