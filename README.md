@@ -23,6 +23,10 @@ npm install express
 Install body parser (for POST method)
  ``` 
 npm install body-parser
+ ```bash
+ To start server
+  ``` 
+node server.js
  ```
  _____________________________________________________________________________________
 
