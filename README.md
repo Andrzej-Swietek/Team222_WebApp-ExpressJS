@@ -16,7 +16,7 @@ ________________________________________________________________________________
 Manual:
 
 Install node modules (express)
-```bash 
+```
 npm install express
  ```
  
@@ -25,10 +25,15 @@ Install body parser (for POST method)
 npm install body-parser
  ```
  To start server
-  ``` !bash 
+  ``` 
 node server.js
  ```
- _____________________________________________________________________________________
+ __________
+ 
+ Or Use Our "Magic" Bin Bash Script
+ __________
+ 
+ ___________________________________________________________________________
 
 # Authors:
 
