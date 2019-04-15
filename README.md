@@ -31,7 +31,12 @@ node server.js
  __________
  
  Or Use Our "Magic" Bin Bash Script
- __________
+ 
+  ```#!/Bin/Bash
+chmod 777 magic.sh
+./magic.sh
+
+  ```
  
  ___________________________________________________________________________
 
