@@ -30,4 +30,10 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, '#'));
 });
 
+// arduino mocno watpliwe czy dziala
+app.get('/arduino', (req, res) =>{
+   res.sendFile(path.join(__dirname, '#'));
+});
+
+
 app.listen(PORT, () =>  console.log('start serwera na porcie ' + PORT));
