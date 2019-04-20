@@ -2,4 +2,4 @@
 npm install express
 npm install body-parser
 npm install mongo-express
-echo "Downloaded everything"
+echo "Everything Downloaded use command: node server.js"
