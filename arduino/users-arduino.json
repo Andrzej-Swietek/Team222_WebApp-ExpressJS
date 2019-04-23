@@ -1,0 +1,14 @@
+{
+  "users": [
+            {
+              "name": "Andrzej",
+              "rfid": "180819181981",
+              "hours": 0
+            },
+            {
+              "name": "Dave",
+              "rfid": "098819181981",
+              "hours": 0
+            },
+           ]
+}

@@ -44,4 +44,3 @@ chmod 777 magic.sh
 
 Andrzej & Daniel
 
-XD
