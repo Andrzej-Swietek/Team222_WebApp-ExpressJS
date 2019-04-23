@@ -3,7 +3,7 @@ npm install express
 npm install body-parser
 npm install mongo-express
 <<<<<<< HEAD
-npm install bootstrap@3
+
 echo "Downloaded everything"
 =======
 echo "Everything Downloaded use command: node server.js"

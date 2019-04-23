@@ -3,9 +3,11 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
-const bootsrapp = require('bootstrap');
+
 const PORT = 3000;
 //nasłuch na określonym porcie
+
+
 
 app.use(express.static('static'));
 
@@ -17,7 +19,7 @@ app.get('/gallery', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/gallery.html'));
 });
 
-app.get('/conatct', (req, res) => {
+app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/contact.html'));
 });
 
