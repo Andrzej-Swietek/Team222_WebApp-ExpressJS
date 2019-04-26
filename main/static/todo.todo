@@ -1,0 +1,20 @@
+FrontEnd:
+        ☐ @high Index
+        ☐ @today Gallery
+        ☐ @low  Mentors
+        ☐ @low  Contact
+        ☐ @low History
+
+    BackEnd:
+        Express.js:
+            ☐ @critical LOGIN on Lightbox
+            ☐ Dashboard
+        Reat.js:
+            ☐ Live Chat
+            ☐ Callendar
+            ☐ Users Profile
+            ☐ Files Upload
+            ☐ Scores
+            ☐ Settings
+            ☐ Engagements Points
+            
