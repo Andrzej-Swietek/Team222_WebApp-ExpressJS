@@ -1,9 +1,9 @@
 FrontEnd:
-        ☐ @high Index
+        ☐ @high  Index
         ☐ @today Gallery
-        ☐ @low  Mentors
-        ☐ @low  Contact
-        ☐ @low History
+        ☐ @low   Mentors
+        ☐ @low   Contact
+        ☐ @low   History
 
     BackEnd:
         Express.js:
@@ -15,6 +15,7 @@ FrontEnd:
             ☐ Users Profile
             ☐ Files Upload
             ☐ Scores
+            ☐ Statistics
             ☐ Settings
             ☐ Engagements Points
             
