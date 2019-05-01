@@ -21,19 +21,23 @@
     Chart.defaults.global.defaultFontSize = 18;
     Chart.defaults.global.defaultFontColor = '#777';
 
-    let massPopChart = new Chart(myChart, {
+    let rp = new Chart(myChart, {
       type:'bar', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
       data:{
-        labels:['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambridge', 'New Bedford'],
+        labels:['#5', '#15', '#25', '#44', '#53', '#68', '73', '#91', '#102', '#111'],
         datasets:[{
-          label:'Population',
+          label:'Ranking Points',
           data:[
-            617594,
-            181045,
-            153060,
-            106519,
-            105162,
-            95072
+            4,
+            2,
+            2,
+            4,
+            1,
+            3,
+            4,
+            2,
+            3,
+            4 
           ],
           //backgroundColor:'green',
           backgroundColor:[
