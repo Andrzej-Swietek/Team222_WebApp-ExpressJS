@@ -17,24 +17,24 @@ Manual:
 
 Install node modules (express)
 ```
-npm install express
+$ npm install express
  ```
  
 Install body parser (for POST method)
  ``` 
-npm install body-parser
+$ npm install body-parser
  ```
  To start server
   ``` 
-node server.js
+$ node server.js
  ```
  __________
  
  Or Use Our "Magic" Bin Bash Script
  
   ```#!/Bin/Bash
-chmod 777 magic.sh
-./magic.sh
+$ chmod 777 magic.sh
+$ ./magic.sh
 
   ```
  
