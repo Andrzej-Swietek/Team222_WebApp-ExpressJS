@@ -26,7 +26,7 @@ $ npm install body-parser
  ```
  To start server
   ``` 
-$ cd node server.js
+$ node server.js
  ```
  __________
  
