@@ -11,6 +11,7 @@
 <body>
   <div class="container">
     <canvas id="myChart"></canvas>
+    <canvas id="robotChart"></canvas>
   </div>
 
   <script>
@@ -22,7 +23,7 @@
     let rp = new Chart(myChart, {
       type:'line', // bar, horizontalBar, pie, line, doughnut, radar, polarArea
       data:{
-        labels:['#5', '#15', '#25', '#44', '#53', '#68', '#73', '#91', '#102', '#111', 'Q1','Q2', 'S1','S2,],
+        labels:['#5', '#15', '#25', '#44', '#53', '#68', '#73', '#91', '#102', '#111', 'Q1','Q2', 'S1','S2','F1','F2','F3'],
         datasets:[{
           label:'Ranking Points',
           data:[
@@ -51,7 +52,50 @@
           borderColor:'#777',
           hoverBorderWidth:3,
           hoverBorderColor:'#000'
-        }]
+        },
+
+
+{
+          label:'Quoter Finals',
+          data:[
+            0,0,0,0,0,0,0,0,0,0,4,
+            4 
+          ],
+          backgroundColor:'rgba(51, 204, 51,0.6)',
+         
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        },
+
+{
+          label:'Semi Finals',
+          data:[
+         0,0,0,0,0,0,0,0,0,0,0,0,4,4
+          ],
+          backgroundColor:'rgba(51, 204, 255,0.6)',
+     
+          
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        },
+{
+          label:'Finals',
+          data:[
+         0,0,0,0,0,0,0,0,0,0,0,0,0,0,4,3,3
+          ],
+          backgroundColor:'rgba(255, 170, 0,0.6)',
+     
+          
+          borderWidth:1,
+          borderColor:'#777',
+          hoverBorderWidth:3,
+          hoverBorderColor:'#000'
+        }
+]
       },
       options:{
         title:{
@@ -80,5 +124,6 @@
       }
     });
   </script>
+
 </body>
 </html>
