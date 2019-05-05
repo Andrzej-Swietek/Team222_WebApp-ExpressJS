@@ -19,6 +19,10 @@ app.get('/gallery', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/gallery.html'));
 });
 
+app.get('/history', (req, res) => {
+  res.sendFile(path.join(__dirname, 'static/history.html'));
+});
+
 app.get('/contact', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/contact.html'));
 });
