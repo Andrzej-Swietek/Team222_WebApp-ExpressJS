@@ -49,7 +49,7 @@
     .header-bg
     {
         position: fixed;
-        top: 10%;
+        top: 8%;
         left: 0;
         height: 100vh;
         width: 100%;
@@ -120,32 +120,12 @@
           
                   <div class="collapse navbar-collapse" id="mainmenu">
                     <ul class="navbar-nav mr-auto">
-                      <li class="nav-item active">
+                      <li class="nav-item">
                         <a class="nav-link" href="/"> Home </a>
                       </li>
           
-                      <li class="nav-item dropdown">
-                        <a
-                          class="nav-link dropdown-toggle"
-                          href="#"
-                          data-toggle="dropdown"
-                          role="button"
-                          aria-expanded="false"
-                          id="submenu"
-                          aria-haspopup="true"
-                        >
-                          History
-                        </a>
-          
-                        <div class="dropdown-menu" aria-labelledby="submenu">
-                          <a class="dropdown-item" href="#"> 2019 </a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="#"> 2018 </a>
-                          <a class="dropdown-item" href="#"> 2017 </a>
-                          <a class="dropdown-item" href="#"> 2016 </a>
-                          <a class="dropdown-item" href="#"> 2015 </a>
-                          <a class="dropdown-item" href="#"> more ... </a>
-                        </div>
+                      <li class="nav-item active">
+                        <a class="nav-link" href="/history">History</a>
                       </li>
           
                       <li class="nav-item">
@@ -221,9 +201,16 @@
                 
              </p> -->
        
+             <script type="text/javascript">
+              $(document).ready(function()
+              {
+                  $(window).scroll(function(){
+                      $('.header-bg').css("opacity",1-$(window).scrollTop()/700)
+                  })
+              })
+          </script>
 
-
-
+<!-- 
  <footer>
         <div class="foot">
           <ul>
@@ -282,17 +269,10 @@
       <div class="podkreslenie">
         © 2019 Copyright: Tigertrons Team #222 Authors: Andrzej Świętek & Daniel Krzyżak
       </div>
-      
+       -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function()
-        {
-            $(window).scroll(function(){
-                $('.header-bg').css("opacity",1-$(window).scrollTop()/700)
-            })
-        })
-    </script>
+ 
       <script
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
