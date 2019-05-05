@@ -66,8 +66,9 @@ html {
 h1 {
   font-size: 36px;
   font-weight: 400;
-  color: #c0d06f;
+  color: #c47207;
   margin: 20px;
+  text-align: center;
 }
 
 .jumpers {
@@ -463,3 +464,16 @@ h1 {
 }
 /*--------------------end card-----------------*/
 
+.donate
+{
+  width:100%;
+  padding-left: 15%;
+  
+}
+
+.contact-info{
+  font-size: 4vh;
+  color: #ca870bbd;
+  text-align: center;
+  margin:20px;
+}
