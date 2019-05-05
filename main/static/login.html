@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Tigertrons Team #222</title>
+	<meta name="description" content="Tigertrons Team #222">
+	<meta name="keywords" content="FIRST, first, team 222, tigertrons, tigertrons.net ">
+	<meta name="author" content="Andrzej Świętek">
+	<meta http-equiv="X-Ua-Compatible" content="IE=edge">
+	
+	
+    <link rel="stylesheet" href="css/login.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=latin-ext" rel="stylesheet">
+	 <style>
+	 body, html
+{
+	height: 100%;
+	margin: 0px;
+}
+	 .bg {
+  /* The image used */
+  background-image: url("1.jpg");
+  /* Full height */
+  height: 100%; 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+	 </style>
+</head>
+
+<body>
+<div class="bg">
+
+
+<div class="box">
+<h2> Sign In</h2>
+	<form action="login.php" method="post">
+		<div class="inputBox">
+			<input type="text" name="username" required="">
+            <label>Username</label>
+		</div>
+        
+        <div class="inputBox">
+			<input type="password" name="password" required="">
+            <label>Password</label>
+		</div>
+              <div class="inputBox">
+        <input type="submit" name="" value="Submit">
+        </div>
+	</form>
+
+
+</div>
+
+</div>
+
+<?php
+	if(isset($_SESSION['error']))	echo $_SESSION['error'];
+?>
+
+</body>
+</html>

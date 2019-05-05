@@ -6,7 +6,7 @@ body, html
 	margin: 0px;
 	padding: 0px;
 	font-family: sans-serif;
-	background: url(bg.jpg);
+	background: url(../img/header2.JPG);
 	background-size:cover;		
 }
 

@@ -33,7 +33,7 @@ app.get('/mentors', (req, res) => {
 
 // login script after lightbox
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, '#'));
+  res.sendFile(path.join(__dirname, 'static/login.html'));
 });
 
 // arduino mocno watpliwe czy dziala
