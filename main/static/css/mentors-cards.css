@@ -1,15 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Poppins:20);
-body
-{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: #000;
-    font-family: 'Poppins', sans-serif;
-}
+
 .mentors-card
 {
     position: relative;
@@ -17,6 +7,7 @@ body
     height: 400px;
     background: #262626;
     overflow: hidden;
+    margin: 10px;
 }
 
 input,
@@ -42,11 +33,11 @@ input{
     text-align: center;
     line-height: 50px;
     font-size: 36px;
-    box-shadow: 0 0 0 0px #9c27b0;
+    box-shadow: 0 0 0 0px #ecc204;
 }
 input:checked ~ .toggle
 {
-    box-shadow: 0 0 0 500px #9c27b0;
+    box-shadow: 0 0 0 500px #ecc204;
     transform: rotate(225deg);
 }
 .imgBx, 
