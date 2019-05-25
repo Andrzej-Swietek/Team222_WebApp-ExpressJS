@@ -13,6 +13,6 @@ currently being supported with security updates.
 | < 4.0   | :x:                |
 
 ## Reporting a Vulnerability
-Report Errors: mr.andi#21@gmail.com
+Report Errors: mr.andi321@gmail.com
 
 
