@@ -1,10 +1,14 @@
 import React from "react";
-
+import Slider from "./slider"
+import TASDletters from "./tasd-letters";
 const Content = (props) => {
     return(
         <div>
-       kontent
-       Lorem ipsum dolor sit amet consectetur adipiscing elit
+            <Slider />
+            <div className="zawartosc">
+                Kontener
+                <TASDletters />
+            </div>
         </div>
               
     );
