@@ -4,7 +4,7 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
-let currentHash = null;
+
 
 const PORT = process.env.PORT || 8080;
 //nasłuch na określonym porcie
@@ -15,50 +15,70 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
 
+const mongoose = require('mongoose');
+const atlasURI =
+  'mongodb+srv://andrzej:andrzej_s@cluster0-zner5.mongodb.net/test?retryWrites=true&w=majority';
+mongoose.connect(atlasURI, { useNewUrlParser: true });
+const db = mongoose.connection;
+
+db.on('error', console.error.bind(console, 'connection error'));
+db.once('open', () => {
+  console.log('połączono z bazą danych');
+});
+
+// SCHEMA DLA KAŻDEJ MONETY
+// COIN SCHEMA
+const userSchema = new mongoose.Schema({
+  login: String,
+  pass: String
+});
+
+const User = mongoose.model('users', userSchema);
+
+
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static/index.html'));
+  res.sendFile(path.join(__dirname, 'main/static/index.html'));
 });
 
 app.get('/gallery', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static/gallery.html'));
+  res.sendFile(path.join(__dirname, 'main/static/gallery.html'));
 });
 
 app.get('/history', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static/history.html'));
+  res.sendFile(path.join(__dirname, 'main/static/history.html'));
 });
 
 app.get('/contact', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static/contact.html'));
+  res.sendFile(path.join(__dirname, 'main/static/contact.html'));
 });
 
 app.get('/mentors', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static/mentors.html'));
+  res.sendFile(path.join(__dirname, 'main/static/mentors.html'));
 });
 
 // login script after lightbox
 app.get('/login', (req, res) => {
-  res.sendFile(path.join(__dirname, 'static/login.html'));
+  res.sendFile(path.join(__dirname, 'main/static/login.html'));
 });
 
 app.post('/signin', (req, res) => {
   const {username, password} = req.body;
 
-  bcrypt.hash(password, 5, function(err, hash) {
-    if (err) return console.error(err);
+  User.findOne({login: username}, (err, user) => {
+    if (err) return res.status(400).send(err);
+    if (!user) return res.status(400).send('taki użytkownik nie istnieje');
 
-    console.log(hash);
-    currentHash = hash;
+    const {pass} = user;
 
-    bcrypt.compare(password, currentHash, function(err, res) {
+    bcrypt.compare(password, pass, function(err, compared) {
       // res == true
-      console.log(res);
-  });
-    // Store hash in your password DB.
+      console.log(compared);
+
+      res.send(compared ? 'ok' : 'notok');
   });
 
-  
+  })
 
-  res.send('ok');
 });
 
 // arduino mocno watpliwe czy dziala
