@@ -1,6 +1,5 @@
 import React from "react";
-import Usericon from "./user-ico";
-import Chaticon  from "./chat-ico";
+
 
 
 const SideMenu = (props) => {
@@ -8,10 +7,10 @@ const SideMenu = (props) => {
         <div className="menu">
             
                 <div className="block-menu-first">
-                    <a className="a-menu" href="/"><Usericon /></a>
+                    <a className="a-menu" href="/">user </a>
                 </div>
                 <div className="block-menu">
-                    <a href="/"><Chaticon/></a>
+                    <a href="/">czat</a>
                 </div>
                 <div className="block-menu">
                     <a href="/"><img src="https://img.icons8.com/flat_round/96/000000/combo-chart.png"/></a>
@@ -25,9 +24,6 @@ const SideMenu = (props) => {
                 <div className="block-menu">
                     <a href="/"><img src="https://img.icons8.com/flat_round/96/000000/settings.png" /></a>
                 </div>
-           
-
-
 
         </div>
               

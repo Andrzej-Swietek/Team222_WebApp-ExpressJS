@@ -3,13 +3,16 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
+const bcrypt = require('bcrypt');
+let currentHash = null;
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 //nasłuch na określonym porcie
 
 
 app.use(express.static('static'));
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}))
 
 
 app.get('/', (req, res) => {
@@ -35,6 +38,27 @@ app.get('/mentors', (req, res) => {
 // login script after lightbox
 app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/login.html'));
+});
+
+app.post('/signin', (req, res) => {
+  const {username, password} = req.body;
+
+  bcrypt.hash(password, 5, function(err, hash) {
+    if (err) return console.error(err);
+
+    console.log(hash);
+    currentHash = hash;
+
+    bcrypt.compare(password, currentHash, function(err, res) {
+      // res == true
+      console.log(res);
+  });
+    // Store hash in your password DB.
+  });
+
+  
+
+  res.send('ok');
 });
 
 // arduino mocno watpliwe czy dziala

@@ -1,8 +1,10 @@
-import React from "react";
+import React, {Component} from "react";
+import axios from 'axios';
 
 import SideMenu from "./components/SideMenu.jsx";
 import Content from "./components/Content";
-class App extends React.Component
+
+class App extends Component
 {
   state = {
     temperature: undefined,
@@ -12,9 +14,6 @@ class App extends React.Component
     description: undefined,
     error: undefined
   }
-
-  
-  
 //state object do komunikacjji z danymi od uzytkownika
 
 //poprzez propsy przesylamy wartosci zmiennych od klasy weather
