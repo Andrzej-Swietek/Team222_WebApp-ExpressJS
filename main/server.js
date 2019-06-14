@@ -4,12 +4,13 @@ const app = express();
 const path = require('path');
 const bodyParser = require('body-parser');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 //nasłuch na określonym porcie
 
 
-
 app.use(express.static('static'));
+app.use(bodyParser.json());
+
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, 'static/index.html'));
@@ -37,9 +38,9 @@ app.get('/login', (req, res) => {
 });
 
 // arduino mocno watpliwe czy dziala
-app.get('/arduino', (req, res) =>{
-   res.sendFile(path.join(__dirname, '#'));
-});
+// app.get('/arduino', (req, res) =>{
+//    res.sendFile(path.join(__dirname, '#'));
+// });
 
 
 app.listen(PORT, () =>  console.log('start serwera na porcie ' + PORT));
