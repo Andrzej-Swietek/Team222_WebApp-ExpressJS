@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 8080;
 //nasłuch na określonym porcie
 
 
-app.use(express.static('static'));
+app.use(express.static('main/static'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
