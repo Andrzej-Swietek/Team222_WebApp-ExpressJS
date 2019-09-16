@@ -6,14 +6,14 @@ import Content from "./components/Content";
 
 class App extends Component
 {
-  state = {
-    temperature: undefined,
-    city: undefined,
-    country: undefined,
-    humidity: undefined,
-    description: undefined,
-    error: undefined
-  }
+  // state = {
+  //   temperature: undefined,
+  //   city: undefined,
+  //   country: undefined,
+  //   humidity: undefined,
+  //   description: undefined,
+  //   error: undefined
+  // }
 //state object do komunikacjji z danymi od uzytkownika
 
 //poprzez propsy przesylamy wartosci zmiennych od klasy weather

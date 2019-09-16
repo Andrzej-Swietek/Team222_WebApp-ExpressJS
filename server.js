@@ -6,15 +6,15 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 
 
-const PORT = process.env.PORT || 8080;
 //nasłuch na określonym porcie
+const PORT = process.env.PORT || 8080;
 
 
 app.use(express.static('main/static'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}))
 
-
+//includowanie mongusa i bazki
 const mongoose = require('mongoose');
 const atlasURI =
   'mongodb+srv://andrzej:andrzej_s@cluster0-zner5.mongodb.net/test?retryWrites=true&w=majority';
@@ -61,6 +61,7 @@ app.get('/login', (req, res) => {
   res.sendFile(path.join(__dirname, 'main/static/login.html'));
 });
 
+//po bezposrednim requescie logowania
 app.post('/signin', (req, res) => {
   const {username, password} = req.body;
 
