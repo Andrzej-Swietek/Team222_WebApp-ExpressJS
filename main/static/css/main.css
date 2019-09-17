@@ -76,13 +76,16 @@ h1 {
   text-align: center;
 }
 h5 {
-  padding-left: 100px;
+  padding-left: 10vw;
   font-size: 36px;
-  padding-top: 50%;
+  /* padding-top: 50%; */
   font-weight: 400;
   color: #c47207;
-  margin: 20px;
+  margin: 0 0 0 0px;
   text-align: center;
+  margin-top: 40%;
+  margin-bottom: 40%;
+
 }
 .jumpers {
   text-align: center;
@@ -128,9 +131,13 @@ h5 {
   min-height: 57px;
 }
 
+
 .bg-jumpers {
   background-color: rgba(22, 22, 21, 0.8) !important;
+  font-size: 1.2em;
+  text-align:center
 }
+
 
 .team-mates-pictures .row {
   margin-bottom: 40px;
