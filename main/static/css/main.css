@@ -12,6 +12,18 @@ html {
   height: 100%;
 }
 
+.mapunia{
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  width: 100%;
+  height: 100vh;
+}
+
+.mapunia iframe{
+  width: 100%;
+  height: 100vh; 
+}
+
 .podkreslenie {
   text-align: center;
   font-size: 15px;
@@ -138,6 +150,81 @@ h5 {
   text-align:center
 }
 
+.contact{
+  width: 1000px;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  display: flex;
+  justify-content: space-between;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; 
+  font-family: 'Poppins', sans-serif;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.contact .box{
+  text-align: center;
+  display: inline-block;
+  padding-left: 100px;
+
+}
+
+.contact .box .icon .fa{
+  font-size: 80px;
+  cursor: pointer;
+
+}
+
+.contact .box .icon h3,
+.contact .box .icon h4{
+  position: relative;
+  overflow: hidden;
+  font-weight: 400;
+  margin: 0;
+  /* padding: 2px 5px; */
+  font-size: 24px;
+  transition: 0.3333s;
+  color: transparent;
+}
+
+.contact .box .icon h4{
+  font-weight: 600;
+  margin: 5px 0;
+  font-style: 30px;
+}
+
+.contact .box .icon h3:before,
+.contact .box .icon h4:before{
+  content: '';
+  display: inline-block;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background: #00bcd4;
+  transition: 1s;
+}
+
+.contact .box .fa:hover ~ h4,
+.contact .box .fa:hover ~ h3{
+  color: #000;
+}
+
+.contact .box .fa:hover ~ h3:before{
+  left: -100%;
+}
+.contact .box .fa:hover ~ h4:before{
+  left: initial;
+  right: -100%;
+}
+.contact .box .icon h4:after{
+  left: initial;
+  right: 100%;
+  background: #9c27b0;
+}
 
 .team-mates-pictures .row {
   margin-bottom: 40px;
