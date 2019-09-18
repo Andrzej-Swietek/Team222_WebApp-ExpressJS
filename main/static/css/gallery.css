@@ -492,6 +492,7 @@ height:100%;
 /*----------------- FOOTER------------------------*/
 
 .foot {
+  margin-top: 2vh;
   height: 90px;
   width: 100%;
   background-color: rgba(255, 153, 0, 0.8);

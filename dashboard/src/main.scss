@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import 'reset.scss';
+
+$primar-color: #c47207;
+$primary-dark: rgba(22, 22, 21, 0.8);
+$secondary-dark: #0c002b;
+
+$primary-font: Montserrat;
+
+*{
+    scroll-behavior: smooth;
+}
+
+// SEKCJA SLIDERA
+section
+{
+  position: relative;
+  width:100%;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+  
+    .slider
+    {
+        position: absolute;
+        top: 0;
+        left:0;
+        width: 100%;
+        height:100%;
+
+        .slide
+        {
+            position:relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            img
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+    }
+}
+
+/*-- Sterowanko Slajdami --*/
+.controls
+{
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+
+  ul
+  {
+    position: absolute;
+    top: 50%;
+    right: 40px;
+    transform: translateY(-50%);
+    margin: 0;
+    padding: 0;
+
+    li
+    {
+      list-style: none;
+
+      a
+      {
+        display: block;
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        opacity: 0.8;
+        margin: 10px 0;
+
+        &hover{
+            opacity: 1;
+        }
+      }
+    }
+
+  }
+}
