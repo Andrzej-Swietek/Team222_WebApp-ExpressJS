@@ -13,6 +13,19 @@ html {
   height: 100%;
 }
 
+.podkreslenie {
+  text-align: center;
+  font-size: 15px;
+  height: 5vh;
+  font-family: Montserrat;
+  width: 100%;
+  padding-top: 10px;
+  align-content: center;
+  background: linear-gradient(217deg, rgba(219, 118, 2, 0.801), rgba(219, 118, 2, 0) 70.71%),
+  linear-gradient(127deg, rgba(241, 108, 31, 0.8), rgba(255, 94, 0 ,0) 70.71%),
+  linear-gradient(336deg, rgba(195, 175, 60, 0.8), rgba(195, 175, 60, 0) 70.71%),
+  linear-gradient(36deg, rgba(170, 149, 31, 0.8), rgba(170, 149, 31, 0) 70.71%);
+}
 .mapunia{
   margin-top: 5vh;
   margin-bottom: 5vh;
@@ -26,16 +39,7 @@ html {
   height: 100vh; 
 }
 
-.podkreslenie {
-  text-align: center;
-  font-size: 15px;
-  height: 40px;
-  font-family: Montserrat;
-  width: 100%;
-  padding-top: 10px;
-  align-content: center;
-  background-color: rgba(255, 153, 0, 0.95);
-}
+
 .bg {
   /* The image used */
   background-image: url("1.jpg");
@@ -116,6 +120,37 @@ h5 {
 .jumpers img {
   width: 100%;
   height: auto;
+}
+
+.donateFounds{
+  background-image: linear-gradient( cyan, rgb(118, 233, 171));
+margin-bottom: 10vh;
+  height: 60vh;
+  align-content: center;
+  text-align: center;
+}
+
+.donateBtn{
+  align-self: center;
+  margin-top: 25vh;
+  width: auto;
+  height: auto;
+  display: inline-block;
+  background-image: url(../img/donate.png);
+  box-sizing: border-box;
+  height: auto;
+  box-shadow: 10px 14px 204px -4px rgb(251, 251, 251);
+  border-radius: 30px; 
+}
+.donateBtn:hover{
+  align-self: center;
+  margin-top: 25vh;
+  display: inline-block;
+  border-radius: 40px; 
+  background-image: url(../img/donate.png);
+  box-sizing: border-box;
+  height: auto;
+  box-shadow: 10px 14px 304px -4px rgb(37, 39, 39);
 }
 
 .tigertrons img {
@@ -376,7 +411,11 @@ h5 {
 .foot {
   height: 90px;
   width: 100%;
-  background-color: rgba(255, 153, 0, 0.8);
+  /* background-color: rgba(255, 153, 0, 0.8); */
+  background: linear-gradient(217deg, rgba(255, 179, 0, 0.8), rgba(255, 179, 0, 0) 70.71%),
+  linear-gradient(127deg, rgba(241, 108, 31, 0.8), rgba(255, 94, 0 ,0) 70.71%),
+  linear-gradient(336deg, rgba(255, 217, 0, 0.8), rgba(255, 217,0, 0) 70.71%),
+  linear-gradient(36deg, rgba(255, 217, 0, 0.8), rgba(255, 217,0, 0) 70.71%);
 }
 
 .foot ul {
