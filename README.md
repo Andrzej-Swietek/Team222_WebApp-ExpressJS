@@ -5,10 +5,10 @@
 # Technologies:
 ## Front End:
 
-HTML, CSS, FLEXBOX, JSX, JavaScript, JQuery
+HTML, CSS, FLEXBOX, JSX, JavaScript, JQuery,  React.js
 
 ## Back End: 
-Express.js , React.js
+Express.js , MongoDB
 
 _____________________________________________________________________________________
 
