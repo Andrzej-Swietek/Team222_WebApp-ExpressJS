@@ -29,7 +29,7 @@ class App extends Component
               
             </div>
             
-            <div className="main">
+            <div className="main" />
               <div className="container">
                 <div className="row">
                   <div className="col-sm-12">
@@ -49,4 +49,3 @@ export default App; // make this component avalible (public-ish) for other files
 
 
             
-          

@@ -1,8 +1,20 @@
 // threeshowcase.js
 
 // Constants
-const canvas_width = screen.width;
+// const canvas_width = screen.width;
+const canvas_width = window.innerWidth;
 const canvas_height = 600;
+contenedor = document.getElementById('container');
+window.addEventListener( 'resize', onWindowResize, false );
+function onWindowResize() {
+
+    camera.aspect = contenedor.clientWidth / contenedor.clientHeight;
+
+    camera.updateProjectionMatrix();
+
+    renderer.setSize(contenedor.clientWidth, contenedor.clientHeight);
+}
+
 
 // Scene init.
 var scene = new THREE.Scene();
