@@ -94,17 +94,67 @@ h1 {
   text-align: center;
 }
 h5 {
-  padding-left: 10vw;
+
   font-size: 36px;
   /* padding-top: 50%; */
   font-weight: 400;
   color: #c47207;
+
+}
+
+.prawyh5{
+  padding-left: 10vw;
   margin: 0 0 0 0px;
   text-align: center;
   margin-top: 40%;
   margin-bottom: 40%;
-
 }
+
+.lewyh5{
+  padding-right : 10vw;
+  margin: 0 0 0 0px;
+  text-align: center;
+  margin-top: 40%;
+  margin-bottom: 40%;
+}
+
+/*  -------------------------------------------------------------------- */
+
+/*                          FLEXBOX PRARALAX + DESCRIPTION               */
+
+/*  -------------------------------------------------------------------- */
+
+
+.par_desc_cont{
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.max-width-ruchomy{
+  max-width: 50vw;
+}
+
+.para_desc{
+margin-left: 10vh;
+  min-width: 300px;
+}
+.ruchome-felx{
+  min-width: 300px;
+}
+
+.lewy_opis{
+  margin-right: 10vh;
+}
+
+
+
+
+
+
+
+
+
 .jumpers {
   text-align: center;
 }
@@ -624,4 +674,15 @@ margin-bottom: 10vh;
   color: #ca870bbd;
   text-align: center;
   margin:20px;
+}
+
+.glowny-obok-front{
+  text-align: center;
+}
+
+.centruj_text{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
