@@ -1,8 +1,8 @@
 // threeshowcase.js
 
 // Constants
-const canvas_width = 1200;
-const canvas_height = 800;
+const canvas_width = screen.width;
+const canvas_height = 600;
 
 // Scene init.
 var scene = new THREE.Scene();
@@ -44,7 +44,7 @@ var cube_loader = new THREE.CubeTextureLoader();
 
 // Cube loading array.
 let format = '.png';
-let path = './dupemap/'
+let path = './threeshowcase/dupemap/';
 var url_array = [
   path + 'px' + format,
   path + 'nx' + format,
@@ -66,7 +66,7 @@ controls.update();
 
 // Robo geometry and materials.
 var robo;
-gltf_loader.load('./models/robo.gltf',
+gltf_loader.load('threeshowcase/models/robo.gltf',
   function onLoad(obj) {
     // Sets envMap for every material.
     var asset = obj.scene.children[0]
